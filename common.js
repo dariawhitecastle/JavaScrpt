@@ -63,4 +63,43 @@ const arrayWithoutSally = friendsWithDogsReduced.filter(
 );
 console.log('filtered: ', arrayWithoutSally);
 
-//
+// sum all the numbers in the array
+function sum(array) {
+  return array.reduce((total, item) => {
+    return total + item;
+  }, 0);
+}
+// return the product of all items in the matrix
+function productAll(array) {
+  return array.reduce((total, item) => {
+    let product = item.reduce((total, item) => {
+      return item * total;
+    }, 1);
+    return total * product;
+  }, 1);
+}
+
+// turns an array of arrays into an object
+function objectify(array) {
+  return array.reduce((obj, item) => {
+    obj[item[0]] = item[1];
+    return obj;
+  }, {});
+}
+
+// return a fortune like sentence with lucky numbers
+function luckyNumbers(array) {
+  // your code here
+}
+
+console.log(sum([10, 15, 20, 25, 30, 35]));
+
+console.log(productAll([[1, 2, 3], [4, 5], [6]]));
+
+console.log(
+  objectify([
+    ['Thundercats', '80s'],
+    ['The Powerpuff Girls', '90s'],
+    ['Sealab 2021', '00s']
+  ])
+);
