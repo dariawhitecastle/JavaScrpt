@@ -92,6 +92,8 @@ function luckyNumbers(array) {
   // your code here
 }
 
+function tallyFruit(array) {}
+
 console.log(sum([10, 15, 20, 25, 30, 35]));
 
 console.log(productAll([[1, 2, 3], [4, 5], [6]]));
@@ -101,5 +103,21 @@ console.log(
     ['Thundercats', '80s'],
     ['The Powerpuff Girls', '90s'],
     ['Sealab 2021', '00s']
+  ])
+);
+
+console.log(
+  tallyFruit([
+    'banana',
+    'cherry',
+    'orange',
+    'apple',
+    'cherry',
+    'orange',
+    'apple',
+    'banana',
+    'cherry',
+    'orange',
+    'fig'
   ])
 );
