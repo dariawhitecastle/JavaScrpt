@@ -1,6 +1,7 @@
 // without undo
 
 allEntries = [];
+
 function CrudManager() {
   this.newObj = {
     firstName: '',
@@ -29,7 +30,7 @@ CrudManager.prototype = {
   },
 };
 
-const requestManager = new CrudManager();
+const requestManager = new CrudManager(); 
 requestManager.execute('createNew', 'George', 'Hamster');
 // allEntries = [ { firstName: 'George', pet: 'Hamster' } ]
 requestManager.execute('createNew', 'Alex', 'Dog');
