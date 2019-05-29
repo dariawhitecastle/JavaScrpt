@@ -156,6 +156,22 @@ function quickSort(array) {
   return sortedArr.concat(quickSort(leftArr), pivot, quickSort(rightArr));
 }
 
+function binaryTreeSearch() {
+  // Define the base case
+  // Define the case where the element is a node
+  // Define the case where the element is a list
+  // In the while, change the arguments so that the function reaches the base case
+
+  // 1. if element doesn't have any more children 
+  //    1. the element has classname
+  //    2. the element doesn't have classname
+  // 2. if element has children 
+  //    1. implement base case again
+
+  function baseCase(element, className) {
+    return element.classList.contains(className);
+  }
+}
 
 function filterOutDuplicates(arr1, arr2) {
   let duplicates = [];
@@ -164,7 +180,7 @@ function filterOutDuplicates(arr1, arr2) {
   }
   return duplicates;
 }
-console.log(filterOutDuplicates([3, 5, 2, 1, 9, 3], [2, 4, 3, 7, 1]))
+// console.log(filterOutDuplicates([3, 5, 2, 1, 9, 3], [2, 4, 3, 7, 1]))
 
 /* eslint-disable no-unused-vars */
 
